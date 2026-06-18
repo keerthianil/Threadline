@@ -40,7 +40,7 @@ struct PurchaseCheckView: View {
                 VStack(spacing: Spacing.md) {
                     photoSection
 
-                    // Step 1: Category — this is what actually drives the comparison
+                    // Step 1: Category - this is what actually drives the comparison
                     VStack(alignment: .leading, spacing: Spacing.xs) {
                         Text("What type of item is it?")
                             .font(.headline)
@@ -332,7 +332,7 @@ struct PurchaseCheckView: View {
     private var verdictTitle: String {
         if similarItems.count >= 5 { return "You probably don't need this" }
         if similarItems.count >= 3 { return "Think twice" }
-        if similarItems.count == 0 { return "New category — go for it" }
+        if similarItems.count == 0 { return "New category - go for it" }
         return "Could be a good add"
     }
 

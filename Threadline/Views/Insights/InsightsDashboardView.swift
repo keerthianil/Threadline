@@ -93,10 +93,10 @@ struct InsightsDashboardView: View {
 
     private var healthScoreLabel: String {
         switch healthScore.overall {
-        case 80...100: return "Excellent — your wardrobe is working hard."
-        case 60..<80: return "Good — a few items need attention."
-        case 40..<60: return "Fair — time to review what's sitting idle."
-        default: return "Needs work — lots of underperformers."
+        case 80...100: return "Excellent - your wardrobe is working hard."
+        case 60..<80: return "Good - a few items need attention."
+        case 40..<60: return "Fair - time to review what's sitting idle."
+        default: return "Needs work - lots of underperformers."
         }
     }
 
@@ -153,7 +153,7 @@ struct InsightsDashboardView: View {
                 Text(String(format: "$%.2f", analytics.averageCostPerWear))
                     .font(.title2.bold().monospacedDigit())
                     .foregroundStyle(analytics.averageCostPerWear < 10 ? ColorTokens.sage : ColorTokens.warmIndigo)
-                Text(analytics.averageCostPerWear < 5 ? "Great value from your wardrobe." : analytics.averageCostPerWear < 15 ? "Room to improve — wear items more." : "High — some items aren't earning their keep.")
+                Text(analytics.averageCostPerWear < 5 ? "Great value from your wardrobe." : analytics.averageCostPerWear < 15 ? "Room to improve - wear items more." : "High - some items aren't earning their keep.")
                     .font(.callout)
                     .foregroundStyle(ColorTokens.textSecondary)
             }

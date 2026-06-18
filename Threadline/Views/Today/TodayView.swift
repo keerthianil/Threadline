@@ -291,7 +291,7 @@ struct TodayView: View {
         EmptyStateView(
             icon: "tshirt",
             title: "Start with your 10 most-worn items",
-            message: "Not your whole closet — just the ones you reach for.",
+            message: "Not your whole closet - just the ones you reach for.",
             actionTitle: "Add First Item",
             action: {}
         )
